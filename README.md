@@ -10,19 +10,19 @@ brew tap gentleman-programming/tap
 
 ## Available Formulas
 
-### ai-code-review
+### gga (Gentleman Guardian Angel) 😇
 
-🤖 Provider-agnostic code review using AI. Use Claude, Gemini, Codex, Ollama, or any AI to enforce your coding standards.
+Provider-agnostic code review using AI. Use Claude, Gemini, Codex, Ollama, or any AI to enforce your coding standards.
 
 ```bash
-brew install gentleman-programming/tap/ai-code-review
+brew install gentleman-programming/tap/gga
 ```
 
 Or after tapping:
 
 ```bash
 brew tap gentleman-programming/tap
-brew install ai-code-review
+brew install gga
 ```
 
 #### Usage
@@ -30,27 +30,30 @@ brew install ai-code-review
 ```bash
 # Initialize in your project
 cd ~/your-project
-ai-code-review init
+gga init
 
 # Create your AGENTS.md with coding standards
 # Then install the git hook
-ai-code-review install
+gga install
+
+# Run manually
+gga run
 
 # Done! Reviews run on every commit
 ```
 
-For more info: [ai-code-review repository](https://github.com/Gentleman-Programming/ai-code-review)
+For more info: [gentleman-guardian-angel repository](https://github.com/Gentleman-Programming/gentleman-guardian-angel)
 
 ## Updating
 
 ```bash
 brew update
-brew upgrade ai-code-review
+brew upgrade gga
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall ai-code-review
+brew uninstall gga
 brew untap gentleman-programming/tap
 ```
