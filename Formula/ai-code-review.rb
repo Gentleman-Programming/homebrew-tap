@@ -1,10 +1,10 @@
 class AiCodeReview < Formula
   desc "Provider-agnostic code review using AI (Claude, Gemini, Codex, Ollama)"
   homepage "https://github.com/Gentleman-Programming/ai-code-review"
-  url "https://github.com/Gentleman-Programming/ai-code-review/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "98d3063564ed176cc0e3aa8ff5d84d41604e383376c3955f604e50c625c522c5"
+  url "https://github.com/Gentleman-Programming/ai-code-review/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "732262787eebba7a7493f58b82c8b58a08d83ab72a8f7c618ae074186a2e5824"
   license "MIT"
-  version "1.0.0"
+  version "1.0.1"
 
   def install
     # Install main script
