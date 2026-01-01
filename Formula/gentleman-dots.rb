@@ -1,10 +1,10 @@
 class GentlemanDots < Formula
   desc "TUI installer for Gentleman.Dots terminal environment"
   homepage "https://github.com/Gentleman-Programming/Gentleman.Dots"
-  url "https://github.com/Gentleman-Programming/Gentleman.Dots/archive/refs/tags/v2.2.0.tar.gz"
-  sha256 "8a56fd3f64dd8a984bf269d85ba8de33aab33ef44a93a7feb17ade4785d54a75"
+  url "https://github.com/Gentleman-Programming/Gentleman.Dots/archive/refs/tags/v2.3.0.tar.gz"
+  sha256 "8963d2c124d6ef2157bbc08dd71189976f4a938135f8c62dd0c02103fe0f1622"
   license "MIT"
-  version "2.2.0"
+  version "2.3.0"
 
   depends_on "go" => :build
 
