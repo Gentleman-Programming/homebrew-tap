@@ -1,7 +1,7 @@
 class GentlemanDots < Formula
   desc "Interactive TUI installer for Gentleman.Dots development environment"
   homepage "https://github.com/Gentleman-Programming/Gentleman.Dots"
-  version "2.7.2"
+  version "2.7.3"
   license "MIT"
 
   on_macos do
