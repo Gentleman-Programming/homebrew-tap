@@ -3,7 +3,7 @@ cask "engram" do
   name "engram"
   desc "Persistent memory for AI coding agents. Agent-agnostic, single binary, zero dependencies."
   homepage "https://github.com/Gentleman-Programming/engram"
-  version "0.1.4"
+  version "0.1.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "engram" do
   on_macos do
     on_intel do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_darwin_amd64.tar.gz"
-      sha256 "408743aaa42032ec8fa76f50829a3f9bc4081a0ee396440976c2611dd729c8bc"
+      sha256 "b5887d9fa6996478880891fb2843652f806fecd1a665e972951cdaa6e29a4d82"
     end
     on_arm do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_darwin_arm64.tar.gz"
-      sha256 "054f5d82ae8f70738cdf7336d0c8ae6a09571c740a20a7710ba492f4a4c72e31"
+      sha256 "33441b3a5757ff2ef7dfc1229f90dff96ba465aa36ef8fe04e8a44b7bc6e3627"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_linux_amd64.tar.gz"
-      sha256 "67aea70b8c22d2fe78b40e2e664d766d9991c7a3eb7cb8a579d1343fb18486b9"
+      sha256 "2d163a7cb2b93b1dacc9fdd0d40c23407722068edf5a7c8f40f2bdcca37fb603"
     end
     on_arm do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_linux_arm64.tar.gz"
-      sha256 "2470712b350c28e0900069455a54a13a2a08e46a5097cf1dc4064c5b49ea9762"
+      sha256 "d4512c76f6d30dc1fd6fc1fd9664c94bba6796273aa81de71bbe26e67987625d"
     end
   end
 
