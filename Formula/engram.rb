@@ -5,21 +5,21 @@
 class Engram < Formula
   desc "Persistent memory for AI coding agents. Agent-agnostic, single binary, zero dependencies."
   homepage "https://github.com/Gentleman-Programming/engram"
-  version "1.0.2"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.0.2/engram_1.0.2_darwin_amd64.tar.gz"
-      sha256 "83a1dd45877f1b9682b7893e9dcdd862d4248bc81432fdc416ffc1487d3ac43f"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.1.0/engram_1.1.0_darwin_amd64.tar.gz"
+      sha256 "122e88d2bb48451c2f54fb8a1672712ed45101e9307b47fe725d42c833d0142a"
 
       def install
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.0.2/engram_1.0.2_darwin_arm64.tar.gz"
-      sha256 "39a96beb945d0282e015d60db15c33a3864fdd357164f1191fa2e9e5b45ab2ac"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.1.0/engram_1.1.0_darwin_arm64.tar.gz"
+      sha256 "bdd85429c55cff71e53dffbeee74a7f6074c07ccd72853f2d430d260a43dbf96"
 
       def install
         bin.install "engram"
@@ -29,15 +29,15 @@ class Engram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.0.2/engram_1.0.2_linux_amd64.tar.gz"
-      sha256 "ad4a59f3829b890278784c03bc90ec07a90a6ea7c0ce24a56373d109d53f357a"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.1.0/engram_1.1.0_linux_amd64.tar.gz"
+      sha256 "3dbb8a5514ea1d062594c2570f0c0ffab0269ff52d6323e9819d9b7bb6217bbc"
       def install
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.0.2/engram_1.0.2_linux_arm64.tar.gz"
-      sha256 "a4ee7c16b9677dab3397deb666bb4553a5c89f423073df70557d9365d377ba10"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.1.0/engram_1.1.0_linux_arm64.tar.gz"
+      sha256 "b0bb93acfeffedfbf7d7fde9520ba9ff75f11a5fb1f78767529fdfc36076e9e6"
       def install
         bin.install "engram"
       end
