@@ -14,22 +14,22 @@ cask "engram" do
   on_macos do
     on_intel do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_darwin_amd64.tar.gz"
-      sha256 "1e780e2fdad20b00b965b4bb76abb90ff1645530f7a21615a6ccf4b43e55587c"
+      sha256 "92c7b4c023a178a61f0bd07c1b7c5b0f2bc8ddf497a1ac5245fea2d0fca7c7a7"
     end
     on_arm do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_darwin_arm64.tar.gz"
-      sha256 "d2ecb3e63f8de6a07d8e0d503e3706b14381f07107d53e5cde5d5a3efc97e6fa"
+      sha256 "d2eb6b27e042cffb38d3f0773c49b8de6939d227e522eeaa3416fc60e715d373"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_linux_amd64.tar.gz"
-      sha256 "5e4a6ba0551c54d68ed04025ea35b087e0f8c497085a155ba92398508e2f27a3"
+      sha256 "7f35c8ea70d0edb2a4c8d13ade5d819495cb7412d09445f6fb4de69a27784a9e"
     end
     on_arm do
       url "https://github.com/Gentleman-Programming/engram/releases/download/v#{version}/engram_#{version}_linux_arm64.tar.gz"
-      sha256 "6ef17420f5af6a05e0cc080dd5e494af837e39561e1e5c8cae6caac7be89dc21"
+      sha256 "2c4f2c70d8292bc20d3873702a4ee062ddd5cde3ae049554ad909b4508a52b7d"
     end
   end
 
