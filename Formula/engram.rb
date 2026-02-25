@@ -5,21 +5,21 @@
 class Engram < Formula
   desc "Persistent memory for AI coding agents. Agent-agnostic, single binary, zero dependencies."
   homepage "https://github.com/Gentleman-Programming/engram"
-  version "1.3.1"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.3.1/engram_1.3.1_darwin_amd64.tar.gz"
-      sha256 "de6c5832e3d3aca845f724cd09731000d54a044f7496dd404c603e70a19d29e3"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.4.0/engram_1.4.0_darwin_amd64.tar.gz"
+      sha256 "1a649a8dcf154a81578c3d2ee1f958854d7157a06b126e8560f5179f5a819a3e"
 
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.3.1/engram_1.3.1_darwin_arm64.tar.gz"
-      sha256 "606b47062b957ddb86e0df9566416d3e8ca5d6c1cfbc95e6ca2dbb61bd4cbc6e"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.4.0/engram_1.4.0_darwin_arm64.tar.gz"
+      sha256 "768efea16dacfff4b35753010884c9ac5ffb6e393ba7428bcf432e71952d7c48"
 
       define_method(:install) do
         bin.install "engram"
@@ -29,15 +29,15 @@ class Engram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.3.1/engram_1.3.1_linux_amd64.tar.gz"
-      sha256 "53ba092efbf5af4c5f5e2126ed984b4995a22f88e698016e7f62702a74f1eda6"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.4.0/engram_1.4.0_linux_amd64.tar.gz"
+      sha256 "565d04aeb425ffd2490c971a4151324b124d38f926ebc79fff3634879dab78d9"
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.3.1/engram_1.3.1_linux_arm64.tar.gz"
-      sha256 "ae60b9ebde328896fbee0cf28758cbc3654e7c55b62c3fc4cc4b1866b67caea0"
+      url "https://github.com/Gentleman-Programming/engram/releases/download/v1.4.0/engram_1.4.0_linux_arm64.tar.gz"
+      sha256 "8f9cd08a8ba653c716ea697b930de9dc7db08dfdbc7e68075f63235d662d0803"
       define_method(:install) do
         bin.install "engram"
       end
