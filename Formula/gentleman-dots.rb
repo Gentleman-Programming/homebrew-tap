@@ -1,28 +1,28 @@
 class GentlemanDots < Formula
   desc "Interactive TUI installer for Gentleman.Dots development environment"
   homepage "https://github.com/Gentleman-Programming/Gentleman.Dots"
-  version "2.9.7"
+  version "2.9.10"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/Gentleman-Programming/Gentleman.Dots/releases/download/v#{version}/gentleman-installer-darwin-arm64"
-      sha256 "d97581b1bf32d9da7b865169502a16a4ea2cb152487f911fb3b04ac97e45e3fd"
+      sha256 "9974b0cc072ad0f8b37beb4ec9bb17c6c14988e8f88442c9528ef40e2a95e998"
     end
     on_intel do
       url "https://github.com/Gentleman-Programming/Gentleman.Dots/releases/download/v#{version}/gentleman-installer-darwin-amd64"
-      sha256 "b36f41f688d6cbcf167b1523caca7e5491d7ed8d3fea9dd642127efd2c64ce5b"
+      sha256 "5ed136dd3492e3554983776b1812dba45d4c5dbe27fb6876cfb599249d1280b8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Gentleman-Programming/Gentleman.Dots/releases/download/v#{version}/gentleman-installer-linux-arm64"
-      sha256 "4b56c23037ae56f4c0d587dc192526bcb00f47b8abb6b2a791b8946e649b2ba9"
+      sha256 "bc549fb580861687c6de90608ec207f85826ea217548d0bc227bb6d6f900e7b0"
     end
     on_intel do
       url "https://github.com/Gentleman-Programming/Gentleman.Dots/releases/download/v#{version}/gentleman-installer-linux-amd64"
-      sha256 "e3455500f491278c6b82431a008eb3d6945f4cb8faf0c83e0ab555d787a919de"
+      sha256 "f625f8d98473a24ef284ccf274ef9dbc983dc4c695afe2876548fa6a84285f41"
     end
   end
 
