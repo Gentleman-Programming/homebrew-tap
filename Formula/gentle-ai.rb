@@ -11,7 +11,7 @@ class GentleAi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v1.13.0/gentle-ai_1.13.0_darwin_amd64.tar.gz"
-      sha256 "ef50ab4e5d23fc7deaf67844ce9e12c1faa696c93f18c7ee4f9f1043f256a72a"
+      sha256 "6416955eb9c87aa2b23ccae0a926f5fa4a515e2fee21eea822a046de519c9370"
 
       define_method(:install) do
         bin.install "gentle-ai"
@@ -19,7 +19,7 @@ class GentleAi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v1.13.0/gentle-ai_1.13.0_darwin_arm64.tar.gz"
-      sha256 "6f579f34df4a2011df4f7e8faccb9c3934252f531db25cb99b1798ebc3c022df"
+      sha256 "32e92dcd39954dfedd141ef004a7fa1cf783bd6555f11d245977d7227fdc3e64"
 
       define_method(:install) do
         bin.install "gentle-ai"
@@ -30,14 +30,14 @@ class GentleAi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v1.13.0/gentle-ai_1.13.0_linux_amd64.tar.gz"
-      sha256 "05a58209c24b9c4bf1950d3fe46b6faf9d0efee0ad79afe18e879a43ccc51d1e"
+      sha256 "781570f05264e6ab4ebca25af3f3772e438056795312fcf289ac2ea00126ff6b"
       define_method(:install) do
         bin.install "gentle-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v1.13.0/gentle-ai_1.13.0_linux_arm64.tar.gz"
-      sha256 "5955aef2b2917d85f3e1d1cd32a4c08deeb2b60e4e617771b4157611dac518d1"
+      sha256 "269f0b4a9b0011fbab74c2d5e863368a45123b7834c3d3887da782467e30b2a7"
       define_method(:install) do
         bin.install "gentle-ai"
       end
