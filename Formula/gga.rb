@@ -1,10 +1,10 @@
 class Gga < Formula
   desc "Gentleman Guardian Angel - Provider-agnostic code review using AI (Claude, Gemini, Codex, OpenCode, Ollama)"
   homepage "https://github.com/Gentleman-Programming/gentleman-guardian-angel"
-  url "https://github.com/Gentleman-Programming/gentleman-guardian-angel/archive/refs/tags/v2.8.1.tar.gz"
-  sha256 "e1be109ba7e60cecbf47cb4142717aca7bb7b3b651ef0d3d42c0b9d923e71ae2"
+  url "https://github.com/Gentleman-Programming/gentleman-guardian-angel/archive/refs/tags/v2.9.0.tar.gz"
+  sha256 "696f0232ffb25894c497b365319700530c54a22d010d09fdef1695100802e6fa"
   license "MIT"
-  version "2.8.1"
+  version "2.9.0"
 
   def install
     # Install main script
