@@ -21,8 +21,11 @@ class Gga < Formula
       "VERSION=\"#{version}\""
 
     # Update LIB_DIR path in the installed script
+    # NOTE: ^ anchor is critical — LIB_DIR= appears in the
+    # if ! LIB_DIR=$(resolve_lib_dir ...) conditional too,
+    # and matching both would break bash syntax.
     inreplace bin/"gga",
-      /LIB_DIR=.*/,
+      /^LIB_DIR=.*/,
       "LIB_DIR=\"#{libexec}/lib\""
   end
 
