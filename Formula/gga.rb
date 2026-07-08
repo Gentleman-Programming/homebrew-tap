@@ -21,8 +21,7 @@ class Gga < Formula
       "VERSION=\"#{version}\""
 
     # Update only the top-level LIB_DIR assignment in the installed script.
-    # Do not match runtime assignments such as:
-    #   if ! LIB_DIR=; then
+    # Do not match the runtime resolver assignment inside the guarded if statement.
     inreplace bin/"gga",
       /^LIB_DIR=.*/,
       "LIB_DIR=\"#{libexec}/lib\""
