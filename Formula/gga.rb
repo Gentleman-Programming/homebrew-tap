@@ -1,10 +1,10 @@
 class Gga < Formula
   desc "Gentleman Guardian Angel - Provider-agnostic code review using AI (Claude, Gemini, Codex, OpenCode, Ollama)"
   homepage "https://github.com/Gentleman-Programming/gentleman-guardian-angel"
-  url "https://github.com/Gentleman-Programming/gentleman-guardian-angel/archive/refs/tags/v2.10.0.tar.gz"
-  sha256 "4d34dd6f2ed4ef46f4b56b23421355e13bd06df47890bbfdf1c65a0a6052610a"
+  url "https://github.com/Gentleman-Programming/gentleman-guardian-angel/archive/refs/tags/v2.10.1.tar.gz"
+  sha256 "c1dbcee120b83238e1c7ecce4a60f88a66810796ad95a239debc09e8509d0fba"
   license "MIT"
-  version "2.10.0"
+  version "2.10.1"
 
   def install
     # Install main script
@@ -20,10 +20,9 @@ class Gga < Formula
       /VERSION=.*\{GGA_VERSION:-dev\}.*/,
       "VERSION=\"#{version}\""
 
-    # Update LIB_DIR path in the installed script
-    # NOTE: ^ anchor is critical — LIB_DIR= appears in the
-    # if ! LIB_DIR=$(resolve_lib_dir ...) conditional too,
-    # and matching both would break bash syntax.
+    # Update only the top-level LIB_DIR assignment in the installed script.
+    # Do not match runtime assignments such as:
+    #   if ! LIB_DIR=; then
     inreplace bin/"gga",
       /^LIB_DIR=.*/,
       "LIB_DIR=\"#{libexec}/lib\""
