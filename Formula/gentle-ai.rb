@@ -5,21 +5,21 @@
 class GentleAi < Formula
   desc "Gentle-AI — Ecosystem, Frameworks, Workflows for AI coding agents."
   homepage "https://github.com/Gentleman-Programming/gentle-ai"
-  version "3.0.2"
+  version "3.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.0.2/gentle-ai_3.0.2_darwin_amd64.tar.gz"
-      sha256 "0ffff82ff0b59ac5ed09c1198db73f6e18741b8c431771c4ee46709b23842f23"
+      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.1.0/gentle-ai_3.1.0_darwin_amd64.tar.gz"
+      sha256 "613f0e11adeebb421daae4c68cb9f207f55c559a70595549ff25f988559226e4"
 
       define_method(:install) do
         bin.install "gentle-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.0.2/gentle-ai_3.0.2_darwin_arm64.tar.gz"
-      sha256 "350fe4018dcf98182d15888d64f8583c5e0df2c36732e76ca4430f3f40b5c612"
+      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.1.0/gentle-ai_3.1.0_darwin_arm64.tar.gz"
+      sha256 "bfcbf8df2682fcf1535b26c604e8dbb445df0ca00a651de204fdc2d013dfe472"
 
       define_method(:install) do
         bin.install "gentle-ai"
@@ -29,15 +29,15 @@ class GentleAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.0.2/gentle-ai_3.0.2_linux_amd64.tar.gz"
-      sha256 "1cd4324951c276d5aa2521d6b7d0a03d1ab458c8a2b39460c84513ff2e11ad3f"
+      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.1.0/gentle-ai_3.1.0_linux_amd64.tar.gz"
+      sha256 "dc55c44a2eb46212a38eca0dfd4d778481ec37e765f40d5a0752d03c28e1ee49"
       define_method(:install) do
         bin.install "gentle-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.0.2/gentle-ai_3.0.2_linux_arm64.tar.gz"
-      sha256 "454df0918e91d65ad5ddd2d830e95195909587d714956080b55913ec7b25e6a4"
+      url "https://github.com/Gentleman-Programming/gentle-ai/releases/download/v3.1.0/gentle-ai_3.1.0_linux_arm64.tar.gz"
+      sha256 "3a89d5f5a549004cc2b01949014ed59f9c28e1ff0c9958531bb539504286e407"
       define_method(:install) do
         bin.install "gentle-ai"
       end
